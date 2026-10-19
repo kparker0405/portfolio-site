@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
     "build-ghpages": "npx @11ty/eleventy --pathprefix=/kparker0405/portfolio-site/"
   },
   "keywords": [],
