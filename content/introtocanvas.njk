@@ -1,0 +1,540 @@
+---
+layout: base.njk
+title: Social Work Continiung Ed Course
+permalink: /swce/
+---
+
+<header
+    id="project-top"
+    class="w3-container w3-center w3-theme-d2 w3-padding-64">
+    <div class="w3-content">
+     
+
+        <h1>Social Work Continuing Education Course</h1>
+
+        <p class="w3-large">
+            A two-hour, self-paced continuing education course developed in
+            Articulate Storyline from a one-hour panel interview, supplemented
+            with peer-reviewed research, risk-assessment content, external media,
+            reflection activities, and a Blackboard assessment.
+        </p>
+    </div>
+</header>
+<div class="w3-content w3-padding-64">
+
+    <!-- Button shown when project navigation is closed -->
+<div
+    id="projectNavButton"
+    class="w3-container w3-margin-bottom"
+    style="display:none;">
+
+        <button
+            id="openProjectNav"
+            type="button"
+            class="w3-button w3-theme-d3"
+            onclick="openProjectNav()"
+            aria-controls="projectSidebar"
+            aria-expanded="true">
+
+            &#9776; Project sections
+        </button>
+    </div>
+
+    <div class="w3-row-padding">
+
+        <!-- Project-specific navigation -->
+        <aside
+            id="projectSidebar"
+            class="w3-col l3 m4 s12"
+            style="display:block;"
+            aria-label="Project sections">
+
+            <nav class="w3-card w3-bar-block w3-theme-l5">
+
+                <button
+                    type="button"
+                    class="w3-bar-item w3-button w3-theme-d3"
+                    onclick="closeProjectNav()">
+
+                    Close &times;
+                </button>
+
+                <div class="w3-container w3-padding">
+                    <strong>Project sections</strong>
+                </div>
+
+                <a
+                    href="#project-overview"
+                    class="project-section-link w3-bar-item w3-button">
+                    Project overview
+                </a>
+
+                <a
+                    href="#challenge"
+                    class="project-section-link w3-bar-item w3-button">
+                    The challenge
+                </a>
+
+                <a
+                    href="#solution"
+                    class="project-section-link w3-bar-item w3-button">
+                    The solution
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="project-section-link w3-bar-item w3-button">
+                    How it works
+                </a>
+
+                <a
+                    href="#contribution"
+                    class="project-section-link w3-bar-item w3-button">
+                    My contribution
+                </a>
+
+                <a
+                    href="#learning-experience"
+                    class="project-section-link w3-bar-item w3-button">
+                    The learning experience
+                </a>
+
+
+           
+
+                <a href="#results-impact"
+                 class="project-section-link w3-bar-item w3-button">
+                 Results and impact</a>
+
+                <a
+                    href="#project-top"
+                    class="w3-bar-item w3-button">
+                    Back to project top
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- Main project content -->
+  <div
+    id="projectContent"
+    class="w3-col l9 m8 s12">
+
+            <div class="w3-container">
+
+  <!-- Project overview -->
+ <section
+    id="project-overview"
+    class="project-section"
+    aria-labelledby="overview-heading">
+    <h2 id="overview-heading">Project overview</h2>
+    
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l7 m7 s12">
+                <img src="/assets/images/objectives.png" alt="A screen shot from Storyline" class="w3-image w3-card">
+            </div>
+
+            <div class="w3-col l5 m5 s12">
+                <div class="w3-card w3-container w3-theme-l3 w3-padding">
+                    <h3>At a glance</h3>
+
+                    <p>
+                        <strong>Launch:</strong><br>
+                        2025
+                    </p>
+
+                    
+
+                    <p>
+                        <strong>Audience:</strong><br>
+                        Social workers completing professional continuing
+                        education at Grand Valley State University.
+                    </p>
+
+                    <p>
+                        <strong>Tools:</strong><br>
+                        Articulate Storyline, Panopto, Blackboard, HTML,
+                        and CSS
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Challenge -->
+ <section
+    id="challenge"
+    class="project-section w3-padding-64"
+    aria-labelledby="challenge-heading">
+        <h2 id="challenge-heading">The challenge</h2>
+
+        <p class="w3-large">
+            The only source material provided for this project was a one-hour
+            recording of a panel discussion between a Master of Social Work
+            student and four therapists working in the field. I was asked to turn
+            that recording into a complete, two-hour, self-paced continuing
+            education course.
+        </p>
+        <p>
+            The panel contained relevant practitioner perspectives, but a
+            recording alone did not provide the structure, scope, interaction, or
+            supporting evidence required for a continuing education experience.
+            The final course needed to be sufficiently detailed and applicable
+            for practicing social workers while meeting a defined two-hour
+            duration.
+        </p>
+
+        <p>
+            I was not the subject-matter expert. I therefore needed to research
+            the field, identify important content not addressed by the panel,
+            select reliable external sources, and integrate that material without
+            extending beyond the available evidence. A subject-matter expert
+            reviewed and validated the completed course before launch.
+        </p>
+
+        <p>
+            The course also addressed sensitive and potentially difficult
+            material. The design needed to communicate that clearly, allow
+            learners to control their progress, and present the content without
+            removing the professional detail required by the intended audience.
+        </p>
+        <p>From a technical perspective, the course needed to function as a
+            self-paced Storyline module, record completion through Blackboard,
+            direct learners to a separate post-course quiz, retain progress when
+            learners exited, and meet accessibility requirements.</p>
+
+
+
+
+    </section>
+
+    <!-- Solution -->
+ <section
+    id="solution"
+    class="project-section w3-padding-32"
+    aria-labelledby="solution-heading">
+        <h2 id="solution-heading">The solution</h2>
+
+        <p>
+            I independently designed and developed a four-part continuing
+            education course around the panel discussion. Rather than presenting
+            the recording as a single video, I divided it into more than 20 short
+            clips organized by topic. The clips range from approximately one to
+            ten minutes, allowing each practitioner discussion to be paired with
+            relevant research, instruction, and reflection.
+        </p>
+
+        <p>
+            I wrote separate learning objectives for each part of the course and
+            used those objectives to determine which panel excerpts to include,
+            where additional instruction was required, and how learners would
+            engage with the material.
+        </p>
+
+        <p>
+            I conducted independent research to address topics that the panel did
+            not cover in sufficient depth. Research and external media were embedded within the instructional
+            sequence rather than added as a separate resource list. Learners move
+            between practitioner perspectives, research findings, explanatory
+            content, and guided reflection questions.
+        </p>
+
+        <p>
+            I built the complete experience in Articulate Storyline and published
+            it as a SCORM package. The course records module completion through
+            Blackboard, where learners complete the required post-course quiz.
+        </p>
+
+    </section>
+
+    <!-- How it works -->
+<section
+    id="how-it-works"
+    class="project-section w3-padding-32"
+    aria-labelledby="process-heading">
+        <h2 id="process-heading">How it works</h2>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>1</strong></p>
+                    <h3>Introduce the context</h3>
+                    <p> Learners review the course objectives, navigation
+                        instructions, content notice, and professional context
+                        before beginning the panel-based material.</p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>2</strong></p>
+                    <h3>Examine practice</h3>
+                    <p>
+                        Short panel clips provide perspectives from four
+                        practicing therapists. The clips are organized by topic
+                        instead of following the original interview sequence
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>3</strong></p>
+                    <h3>Extend with evidence</h3>
+                    <p>
+                        Peer-reviewed research, risk-assessment information, and
+                        selected external videos add context and address content
+                        not covered by the original panel. Guided questions prompt learners to connect the content
+                        to social work practice. 
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- My contribution -->
+<section
+    id="contribution"
+    class="project-section w3-padding-32"
+    aria-labelledby="contribution-heading">
+        <h2 id="contribution-heading">My contribution</h2>
+
+        <ul class="w3-ul">
+            <li>
+                Converted a one-hour practitioner panel recording into a complete,
+                four-part, self-paced continuing education course.
+            </li>
+
+            <li>
+                Performed the instructional analysis without an existing
+                curriculum, course outline, or set of SME-authored instructional
+                materials.
+            </li>
+
+            <li>
+                Defined the course structure and wrote learning objectives for
+                each of the four sections.
+            </li>
+
+            <li>
+                Reviewed and reorganized the source interview around instructional
+                topics rather than retaining its original chronological order.
+            </li>
+
+            <li>
+                Used Panopto to edit the recording into more than 20 short,
+                topic-specific clips.
+            </li>
+
+            <li>
+                Completed audio cleanup and added speaker identification and
+                closed captions to the video content.
+            </li>
+
+            <li>
+                Conducted independent research to identify important information
+                not covered by the panel.
+            </li>
+
+
+
+
+            <li>
+                Structured the mix of video, reading, interaction, and reflection
+                to meet a two-hour continuing education requirement.
+            </li>
+
+         
+
+            <li>
+                Built interactions using layers, triggers, states, variables,
+                timeline controls, tabs, and accordions.
+            </li>
+
+            <li>
+                Configured conditional navigation, completion tracking, custom
+                player settings, and resume behavior.
+            </li>
+
+            <li>
+                Implemented keyboard support, color contrast, alternative text,
+                and captioned media.
+            </li>
+
+
+            <li>
+                Connected the Storyline experience to the required post-course
+                assessment in Blackboard.
+            </li>
+
+            <li>
+                Prepared the complete course for subject-matter expert review and
+                incorporated the validated content into the published version.
+            </li>
+        </ul>
+    </section>
+
+ 
+<section
+    id="learning-experience"
+    class="project-section w3-padding-32"
+    aria-labelledby="experience-heading">
+        <h2 id="experience-heading">The learning experience</h2>
+        <p>
+            The course begins by explaining how the original panel discussion was
+            expanded into a broader learning experience. Learners are informed
+            that they will watch short excerpts, review current research, view
+            selected external media, and respond to questions.
+        </p>
+
+     
+
+        <p>
+            Each of the four parts has its own learning objectives. Within those
+            parts, learners alternate among panel clips, explanatory content,
+            readings, interactive components, external videos, and reflection
+            prompts. This structure reduces long periods of passive viewing and
+            gives learners multiple ways to engage with the subject.
+        </p>
+
+        <p>
+            The design supports both linear progression and review. Learners can
+            use the player controls to move backward to previous material. On
+            screens containing required interactive content, the forward control
+            is withheld until the learner has accessed the available material.
+        </p>
+
+        <p>
+            The overall combination of panel footage, supporting instruction,
+            research, interaction, and reflection was designed to meet the
+            required two-hour continuing education scope. The post-course quiz is
+            completed separately in Blackboard.
+        </p>
+
+
+    </section>
+
+
+
+
+<section
+    id="results-impact"
+    class="project-section w3-padding-32"
+    aria-labelledby="results-heading">
+
+
+
+    
+        <h2 id="results-heading">Results and impact</h2>
+
+        <p>
+            The course launched in 2025 and remains available through Grand
+            Valley State University's continuing education program. It provides
+            social workers with two continuing education credit hours through a
+            self-paced learning experience.
+        </p>
+
+        <p>
+            The completed product expanded a single panel recording into a
+            structured course that includes practitioner perspectives,
+            peer-reviewed evidence, risk-assessment content, external media,
+            guided reflection, accessible interactions, and an LMS-based
+            completion process.
+        </p>
+    </section>
+
+
+
+    <nav class="w3-padding-32" aria-label="Project navigation">
+        <a href="/#portfolio" class="w3-button w3-black">
+            &larr; Back to all projects
+        </a>
+    </nav>
+
+            </div><!-- End inner w3-container -->
+        </div><!-- End projectContent -->
+
+    </div><!-- End w3-row-padding -->
+</div><!-- End w3-content -->
+
+
+<script>
+
+    const sidebar = document.getElementById("projectSidebar");
+    const content = document.getElementById("projectContent");
+    const buttonContainer = document.getElementById("projectNavButton");
+    const openButton = document.getElementById("openProjectNav");
+    const sectionLinks = document.querySelectorAll(".project-section-link");
+    const sections = document.querySelectorAll(".project-section");
+
+    function openProjectNav() {
+        sidebar.style.display = "block";
+        content.className = "w3-col l9 m8 s12";
+        buttonContainer.style.display = "none";
+
+        openButton.setAttribute("aria-expanded", "true");
+
+        updateActiveSection();
+    }
+
+    function closeProjectNav() {
+        sidebar.style.display = "none";
+        content.className = "w3-col l12 m12 s12";
+        buttonContainer.style.display = "block";
+
+        openButton.setAttribute("aria-expanded", "false");
+        openButton.focus();
+    }
+
+    function updateActiveSection() {
+        const navigationOffset = 100;
+        let activeSectionId = sections[0]?.id;
+
+        sections.forEach(function (section) {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop <= navigationOffset) {
+                activeSectionId = section.id;
+            }
+        });
+
+        sectionLinks.forEach(function (link) {
+            const targetId = link.getAttribute("href").substring(1);
+            const isActive = targetId === activeSectionId;
+
+            link.classList.toggle("w3-theme-d3", isActive);
+            link.classList.toggle("w3-text-white", isActive);
+
+            if (isActive) {
+                link.setAttribute("aria-current", "location");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", updateActiveSection);
+    window.addEventListener("resize", updateActiveSection);
+
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            sidebar.style.display === "block"
+        ) {
+            closeProjectNav();
+        }
+    });
+
+  openButton.setAttribute("aria-expanded", "true");
+updateActiveSection();
+</script>
+
+
+
+

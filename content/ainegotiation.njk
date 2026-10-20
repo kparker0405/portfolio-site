@@ -1,0 +1,439 @@
+---
+layout: base.njk
+title: Ai Negotiation
+permalink: /negotiation-simulation/
+---
+
+
+
+<!-- Project heading -->
+
+
+<header
+    id="project-top"
+    class="w3-container w3-center w3-theme-d2 w3-padding-64">
+    <div class="w3-content">
+       
+
+        <h1>AI Negotiation Partner</h1>
+
+        <p class="w3-large">
+            An AI-powered simulation that gives business students repeated,
+            independent practice with negotiation strategy before they negotiate
+            with their peers.
+        </p>
+
+        
+    </div>
+
+    
+    
+</header>
+
+
+<div class="w3-content w3-padding-64">
+
+    <!-- Button shown when project navigation is closed -->
+<div
+    id="projectNavButton"
+    class="w3-container w3-margin-bottom"
+    style="display:none;">
+
+        <button
+            id="openProjectNav"
+            type="button"
+            class="w3-button w3-theme-d3"
+            onclick="openProjectNav()"
+            aria-controls="projectSidebar"
+            aria-expanded="true">
+
+            &#9776; Project sections
+        </button>
+    </div>
+
+    <div class="w3-row-padding">
+
+        <!-- Project-specific navigation -->
+        <aside
+            id="projectSidebar"
+            class="w3-col l3 m4 s12"
+            style="display:block;"
+            aria-label="Project sections">
+
+            <nav class="w3-card w3-bar-block w3-theme-l5">
+
+                <button
+                    type="button"
+                    class="w3-bar-item w3-button w3-theme-d3"
+                    onclick="closeProjectNav()">
+
+                    Close &times;
+                </button>
+
+                <div class="w3-container w3-padding">
+                    <strong>Project sections</strong>
+                </div>
+
+                <a
+                    href="#project-overview"
+                    class="project-section-link w3-bar-item w3-button">
+                    Project overview
+                </a>
+
+                <a
+                    href="#challenge"
+                    class="project-section-link w3-bar-item w3-button">
+                    The challenge
+                </a>
+
+                <a
+                    href="#solution"
+                    class="project-section-link w3-bar-item w3-button">
+                    The solution
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="project-section-link w3-bar-item w3-button">
+                    How it works
+                </a>
+
+                <a
+                    href="#contribution"
+                    class="project-section-link w3-bar-item w3-button">
+                    My contribution
+                </a>
+
+                <a
+                    href="#learning-experience"
+                    class="project-section-link w3-bar-item w3-button">
+                    The learning experience
+                </a>
+
+                <a
+                    href="#project-top"
+                    class="w3-bar-item w3-button">
+                    Back to project top
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- Main project content -->
+  <div
+    id="projectContent"
+    class="w3-col l9 m8 s12">
+
+            <div class="w3-container">
+
+
+    <!-- Project overview -->
+
+    <section
+    id="project-overview"
+    class="project-section"
+    aria-labelledby="overview-heading">
+
+    <h2 id="overview-heading">Project overview</h2>
+
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l7 m7 s12">
+                <img src="/assets/images/negotiation.png" alt="UM-Maizey screen showing a chat"
+                    class="w3-image w3-card">
+            </div>
+
+            <div class="w3-col l5 m5 s12">
+                <div class="w3-card w3-container w3-theme-l3 w3-padding">
+                    <h3>At a glance</h3>
+
+                    <p>
+                        <strong>Launch:</strong><br>
+                        Fall 2025
+                    </p>
+
+                    
+
+                    <p>
+                        <strong>Audience:</strong><br>
+                        Graduated students enrolled in <em>Bargaining and Influence Skills</em> and undergraduate
+                        students enrolled in <em>Negotiation Strategy</em> at U of
+                        M.
+                    </p>
+
+                    <p>
+                        <strong>Tools:</strong><br>
+                        <a href="https://its.umich.edu/computing/ai/maizey-in-depth" target="_blank">UM Maizey</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Challenge -->
+<section
+    id="challenge"
+    class="project-section w3-padding-64"
+    aria-labelledby="challenge-heading">
+
+    <h2 id="challenge-heading">The challenge</h2>
+
+        <p class="w3-large">
+            Negotiation proficiency requires deliberate, repeated practice, but a
+            traditional paired role-play may give each student only one opportunity
+            to test an opening offer.
+        </p>
+        <p>
+            Dr. Shirli Kopelman had successfully used a PDF-based negotiation case
+            for an in-person role-play exercise for years. The challenge was to
+            translate that case into an AI experience that would create authentic
+            resistance, remain faithful to the case, and allow students to test
+            different strategies under consistent conditions.
+        </p>
+    </section>
+
+    <!-- Solution -->
+<section
+    id="solution"
+    class="project-section w3-padding-32"
+    aria-labelledby="solution-heading">
+
+    <h2 id="solution-heading">The solution</h2>
+
+        <p>
+            I independently designed and built an AI negotiation partner in U-M
+            Maizey using the faculty member’s existing case PDF as the source
+            material.
+        </p>
+
+        <p>
+            The bot understands the details of the case, follows realistic buyer
+            logic, and maintains a consistent personality. It responds dynamically
+            to students’ offers—for example, reacting negatively to an excessively
+            high anchor or questioning whether an unusually low offer is serious.
+        </p>
+
+        <p>
+            Unlike a human negotiation partner who remembers an earlier attempt,
+            the bot treats every new conversation independently. Students can
+            therefore test multiple strategies under consistent conditions and
+            compare the results.
+        </p>
+
+
+    </section>
+
+    <!-- How it works -->
+<section
+    id="how-it-works"
+    class="project-section w3-padding-32"
+    aria-labelledby="process-heading">
+
+    <h2 id="process-heading">How it works</h2>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>1</strong></p>
+                    <h3>Select opening offer</h3>
+                    <p>
+                        After reading the case, the student starts the negotiation with the bot by pitching an opening
+                        offer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>2</strong></p>
+                    <h3>Negotiate with AI</h3>
+                    <p>
+                        Students negotiate with the Maizey bot, experience realistic
+                        resistance, and adjust their strategy in response.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>3</strong></p>
+                    <h3>Reflect</h3>
+                    <p>
+                        Students export their transcripts and respond to structured
+                        reflection questions about their decisions and performance.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- My contribution -->
+<section
+    id="contribution"
+    class="project-section w3-padding-32"
+    aria-labelledby="contribution-heading">
+
+    <h2 id="contribution-heading">My contribution</h2>
+
+
+        <ul class="w3-ul">
+            <li>
+                Analyzed the existing PDF case and translated it into an interactive
+                AI negotiation experience.
+            </li>
+
+            <li>
+                Learned and selected the appropriate U-M Maizey settings for the
+                learning experience.
+            </li>
+
+            <li>
+                Designed the bot’s role, goals, decision logic, boundaries, and tone.
+            </li>
+
+            <li>
+                Configured the bot to respond authentically to a range of opening
+                offers and negotiation strategies.
+            </li>
+
+            <li>
+                Tested possible student behaviors and anticipated problems that could
+                occur during the simulation.
+            </li>
+
+            <li>
+                Refined the experience so the bot remained consistent without making
+                the interaction feel scripted.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Learning experience -->
+<section
+    id="learning-experience"
+    class="project-section w3-padding-32"
+    aria-labelledby="experience-heading">
+
+    <h2 id="experience-heading">The learning experience</h2>
+        <p> An animated video places students in the role of a café owner,
+            establishing the context and building emotional investment. A strategy video introduces negotiation tactics.
+            Students then
+            prepare and record their opening pitch and anchoring plan. After negotiation with the bot, students discuss
+            their experiences in class and connect their
+            individual experimentation to broader negotiation principles. Students apply what they learned by repeating
+            the negotiation
+            with a classmate.</p>
+
+
+</section>
+
+    <nav class="w3-padding-32" aria-label="Project navigation">
+        <a href="/#portfolio" class="w3-button w3-black">
+            &larr; Back to all projects
+        </a>
+    </nav>
+
+            </div><!-- End inner w3-container -->
+        </div><!-- End projectContent -->
+
+    </div><!-- End w3-row-padding -->
+</div><!-- End w3-content -->
+
+
+
+
+    <!-- Results 
+  <section class="w3-panel w3-pale-green w3-leftbar w3-border-green w3-padding-32"
+           aria-labelledby="results-heading">
+    <h2 id="results-heading">Results and impact</h2>
+
+    <p>
+      Add evidence here when it is available. Useful evidence could include:
+    </p>
+
+    <ul>
+      <li>Number of students or course sections that used the simulation</li>
+      <li>Student or faculty feedback</li>
+      <li>Learning assessment results</li>
+      <li>Improvements made after testing</li>
+      <li>Whether the simulation will be reused</li>
+    </ul>
+  </section>
+  --->
+
+<script>
+
+    const sidebar = document.getElementById("projectSidebar");
+    const content = document.getElementById("projectContent");
+    const buttonContainer = document.getElementById("projectNavButton");
+    const openButton = document.getElementById("openProjectNav");
+    const sectionLinks = document.querySelectorAll(".project-section-link");
+    const sections = document.querySelectorAll(".project-section");
+
+    function openProjectNav() {
+        sidebar.style.display = "block";
+        content.className = "w3-col l9 m8 s12";
+        buttonContainer.style.display = "none";
+
+        openButton.setAttribute("aria-expanded", "true");
+
+        updateActiveSection();
+    }
+
+    function closeProjectNav() {
+        sidebar.style.display = "none";
+        content.className = "w3-col l12 m12 s12";
+        buttonContainer.style.display = "block";
+
+        openButton.setAttribute("aria-expanded", "false");
+        openButton.focus();
+    }
+
+    function updateActiveSection() {
+        const navigationOffset = 100;
+        let activeSectionId = sections[0]?.id;
+
+        sections.forEach(function (section) {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop <= navigationOffset) {
+                activeSectionId = section.id;
+            }
+        });
+
+        sectionLinks.forEach(function (link) {
+            const targetId = link.getAttribute("href").substring(1);
+            const isActive = targetId === activeSectionId;
+
+            link.classList.toggle("w3-theme-d3", isActive);
+            link.classList.toggle("w3-text-white", isActive);
+
+            if (isActive) {
+                link.setAttribute("aria-current", "location");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", updateActiveSection);
+    window.addEventListener("resize", updateActiveSection);
+
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            sidebar.style.display === "block"
+        ) {
+            closeProjectNav();
+        }
+    });
+
+  openButton.setAttribute("aria-expanded", "true");
+updateActiveSection();
+</script>
+
+

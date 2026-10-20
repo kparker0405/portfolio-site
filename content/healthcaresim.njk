@@ -1,0 +1,330 @@
+---
+layout: base.njk
+title: Employer-Sponsored Health Care Simulation
+permalink: /healthcare-simulation/
+---
+
+
+
+<!-- Project heading -->
+<header
+    id="project-top"
+    class="w3-container w3-center w3-theme-d2 w3-padding-64">
+    <div class="w3-content">
+  
+
+    <h1>Employer-Sponsored Health Care Simulation</h1>
+
+    <p class="w3-large">
+      An interactive simulation that helps students understand the economic
+      trade-offs involved in designing an employer-sponsored health plan.
+    </p>
+  </div>
+</header>
+
+<div class="w3-content w3-padding-64">
+
+    <!-- Button shown when project navigation is closed -->
+<div
+    id="projectNavButton"
+    class="w3-container w3-margin-bottom"
+    style="display:none;">
+
+        <button
+            id="openProjectNav"
+            type="button"
+            class="w3-button w3-theme-d3"
+            onclick="openProjectNav()"
+            aria-controls="projectSidebar"
+            aria-expanded="true">
+
+            &#9776; Project sections
+        </button>
+    </div>
+
+    <div class="w3-row-padding">
+
+        <!-- Project-specific navigation -->
+        <aside
+            id="projectSidebar"
+            class="w3-col l3 m4 s12"
+            style="display:block;"
+            aria-label="Project sections">
+
+            <nav class="w3-card w3-bar-block w3-theme-l5">
+
+                <button
+                    type="button"
+                    class="w3-bar-item w3-button w3-theme-d3"
+                    onclick="closeProjectNav()">
+
+                    Close &times;
+                </button>
+
+                <div class="w3-container w3-padding">
+                    <strong>Project sections</strong>
+                </div>
+
+                <a
+                    href="#project-overview"
+                    class="project-section-link w3-bar-item w3-button">
+                    Project overview
+                </a>
+
+                <a
+                    href="#challenge"
+                    class="project-section-link w3-bar-item w3-button">
+                    The challenge
+                </a>
+
+                <a
+                    href="#solution"
+                    class="project-section-link w3-bar-item w3-button">
+                    The solution
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="project-section-link w3-bar-item w3-button">
+                    How it works
+                </a>
+
+                <a
+                    href="#contribution"
+                    class="project-section-link w3-bar-item w3-button">
+                    My contribution
+                </a>
+
+                <a
+                    href="#learning-experience"
+                    class="project-section-link w3-bar-item w3-button">
+                    The learning experience
+                </a>
+
+                <a
+                    href="#project-top"
+                    class="w3-bar-item w3-button">
+                    Back to project top
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- Main project content -->
+  <div
+    id="projectContent"
+    class="w3-col l9 m8 s12">
+
+            <div class="w3-container">
+
+  <!-- Project overview -->
+ <section
+    id="project-overview"
+    class="project-section"
+    aria-labelledby="overview-heading">
+    <h2 id="overview-heading">Project overview</h2>
+
+    <div class="w3-row-padding">
+
+      <div class="w3-col l7 m7 s12">
+        <img
+          src="/assets/images/BE708g1.png"
+          alt="Health care simulation screen showing insurance-plan choices"
+          class="w3-image w3-card"
+        >
+      </div>
+
+      <div class="w3-col l5 m5 s12">
+        <div class="w3-card w3-container w3-theme-l3 w3-padding">
+          <h3>At a glance</h3>
+
+          <p>
+            <strong>Timeline:</strong><br>
+            October 2025–January 2026
+          </p>
+
+          
+
+          <p>
+            <strong>Audience:</strong><br>
+            Graduated students enrolled in <em>Health Care Markets and Public Policies</em> (BE 708) at U of M.
+          </p>
+
+          <p>
+            <strong>Tools:</strong><br>
+            Qualtrics, HTML, CSS, and JavaScript
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Challenge -->
+ <section
+    id="challenge"
+    class="project-section w3-padding-64"
+    aria-labelledby="challenge-heading">
+    <h2 id="challenge-heading">The challenge</h2>
+
+    <p class="w3-large">
+      Students needed a way to experience the financial and strategic
+      trade-offs involved in creating an employer-sponsored health plan,
+      rather than learning about those trade-offs only through readings
+      or lectures.
+    </p>
+  </section>
+
+  <!-- Solution -->
+ <section
+    id="solution"
+    class="project-section w3-padding-32"
+    aria-labelledby="solution-heading">
+    <h2 id="solution-heading">The solution</h2>
+
+    <p>
+      I created an interactive health insurance simulation in which students
+      select a plan type and make a series of decisions about coverage and
+      generosity. Each decision changes the annual premium and the estimated
+      monthly employee contribution.
+    </p>
+
+    <p>
+      The simulation displays these calculations throughout the experience,
+      allowing students to see the financial effect of each choice immediately.
+      The figures are based on real data from the University of Michigan
+      Benefits Office.
+    </p>
+  </section>
+
+  <!-- How it works -->
+<section
+    id="how-it-works"
+    class="project-section w3-padding-32"
+    aria-labelledby="process-heading">
+    <h2 id="process-heading">How it works</h2>
+
+    <div class="w3-row-padding">
+
+      <div class="w3-col l4 m6 s12 w3-margin-bottom">
+        <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+          <p class="w3-xxlarge"><strong>1</strong></p>
+          <h3>Choose a plan</h3>
+          <p>
+            Students begin by selecting one of three insurance-plan types.
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 s12 w3-margin-bottom">
+        <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+          <p class="w3-xxlarge"><strong>2</strong></p>
+          <h3>Make trade-offs</h3>
+          <p>
+            Display logic leads each group through the appropriate path.
+            Every question offers three levels of generosity.
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 s12 w3-margin-bottom">
+        <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+          <p class="w3-xxlarge"><strong>3</strong></p>
+          <h3>See the costs</h3>
+          <p>
+            Students see the updated premium and employee contribution
+            after each decision.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- My contribution -->
+<section
+    id="contribution"
+    class="project-section w3-padding-32"
+    aria-labelledby="contribution-heading">
+    <h2 id="contribution-heading">My contribution</h2>
+
+    <ul class="w3-ul">
+      <li>
+        Collaborated with faculty to define the learning objectives and
+        simulation structure.
+      </li>
+      <li>
+        Organized the questions, available choices, and monetary values
+        into a master decision map.
+      </li>
+      <li>
+        Designed three branching paths using Qualtrics display logic.
+      </li>
+      <li>
+        Developed the live premium and employee-contribution calculations.
+      </li>
+      <li>
+        Built and tested the learner-facing interface.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Learning experience -->
+<section
+    id="learning-experience"
+    class="project-section w3-padding-32"
+    aria-labelledby="experience-heading">
+    <h2 id="experience-heading">The learning experience</h2>
+
+    <p>
+      Students work in groups of five and receive one of four fictional
+      company profiles. Each profile provides information about the company
+      and its employees.
+    </p>
+
+    <p>
+      Acting as benefits consultants, students design an insurance plan that
+      fits their assigned workforce. They must explain their choices and
+      justify the trade-offs they made.
+    </p>
+  </section>
+
+
+
+
+    <nav class="w3-padding-32" aria-label="Project navigation">
+        <a href="/#portfolio" class="w3-button w3-black">
+            &larr; Back to all projects
+        </a>
+    </nav>
+
+            </div><!-- End inner w3-container -->
+        </div><!-- End projectContent -->
+
+    </div><!-- End w3-row-padding -->
+</div><!-- End w3-content -->
+
+
+
+
+    <!-- Results 
+  <section class="w3-panel w3-pale-green w3-leftbar w3-border-green w3-padding-32"
+           aria-labelledby="results-heading">
+    <h2 id="results-heading">Results and impact</h2>
+
+    <p>
+      Add evidence here when it is available. Useful evidence could include:
+    </p>
+
+    <ul>
+      <li>Number of students or course sections that used the simulation</li>
+      <li>Student or faculty feedback</li>
+      <li>Learning assessment results</li>
+      <li>Improvements made after testing</li>
+      <li>Whether the simulation will be reused</li>
+    </ul>
+  </section>
+  --->
+
+
+

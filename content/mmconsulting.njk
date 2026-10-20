@@ -1,0 +1,512 @@
+---
+layout: base.njk
+title: MM Consulting
+permalink: /consulting-simulation/
+---
+
+<header
+    id="project-top"
+    class="w3-container w3-center w3-theme-d2 w3-padding-64">
+    <div class="w3-content">
+    
+
+        <h1>Business Consulting Strategy Simulation</h1>
+
+        <p class="w3-large">
+            A multi-level Qualtrics simulation with dynamic content, persistent
+            scoring, timed progression, randomized disruptions, and personalized
+            strategic feedback for graduate consulting teams.
+        </p>
+    </div>
+</header>
+
+<div class="w3-content w3-padding-64">
+
+    <!-- Button shown when project navigation is closed -->
+<div
+    id="projectNavButton"
+    class="w3-container w3-margin-bottom"
+    style="display:none;">
+
+        <button
+            id="openProjectNav"
+            type="button"
+            class="w3-button w3-theme-d3"
+            onclick="openProjectNav()"
+            aria-controls="projectSidebar"
+            aria-expanded="true">
+
+            &#9776; Project sections
+        </button>
+    </div>
+
+    <div class="w3-row-padding">
+
+        <!-- Project-specific navigation -->
+        <aside
+            id="projectSidebar"
+            class="w3-col l3 m4 s12"
+            style="display:block;"
+            aria-label="Project sections">
+
+            <nav class="w3-card w3-bar-block w3-theme-l5">
+
+                <button
+                    type="button"
+                    class="w3-bar-item w3-button w3-theme-d3"
+                    onclick="closeProjectNav()">
+
+                    Close &times;
+                </button>
+
+                <div class="w3-container w3-padding">
+                    <strong>Project sections</strong>
+                </div>
+
+                <a
+                    href="#project-overview"
+                    class="project-section-link w3-bar-item w3-button">
+                    Project overview
+                </a>
+
+                <a
+                    href="#challenge"
+                    class="project-section-link w3-bar-item w3-button">
+                    The challenge
+                </a>
+
+                <a
+                    href="#solution"
+                    class="project-section-link w3-bar-item w3-button">
+                    The solution
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="project-section-link w3-bar-item w3-button">
+                    How it works
+                </a>
+
+                <a
+                    href="#contribution"
+                    class="project-section-link w3-bar-item w3-button">
+                    My contribution
+                </a>
+
+                <a
+                    href="#learning-experience"
+                    class="project-section-link w3-bar-item w3-button">
+                    The learning experience
+                </a>
+
+                <a
+                    href="#project-top"
+                    class="w3-bar-item w3-button">
+                    Back to project top
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- Main project content -->
+  <div
+    id="projectContent"
+    class="w3-col l9 m8 s12">
+
+            <div class="w3-container">
+
+  <!-- Project overview -->
+   <section
+    id="project-overview"
+    class="project-section"
+    aria-labelledby="overview-heading">
+        <h2 id="overview-heading">Project overview</h2>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l7 m7 s12">
+                <img src="/assets/images/consulting.png" alt="A screen shot from the strategy simulation in Qualtrics"
+                    class="w3-image w3-card">
+            </div>
+
+            <div class="w3-col l5 m5 s12">
+                <div class="w3-card w3-container w3-theme-l3 w3-padding">
+                    <h3>At a glance</h3>
+
+                    <p>
+                        <strong>Launch:</strong><br>
+                        Winter 2027
+                    </p>
+
+
+
+                    <p>
+                        <strong>Audience:</strong><br>
+                        Graduated students enrolled in the <em>Management Consulting Studio</em> course at U of
+                        M.
+                    </p>
+
+                    <p>
+                        <strong>Tools:</strong><br>
+                        Qualtrics, HTML, CSS, JavaScript, R, and Markdown
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Challenge -->
+    <section
+    id="challenge"
+    class="project-section w3-padding-64"
+    aria-labelledby="challenge-heading">
+        <h2 id="challenge-heading">The challenge</h2>
+
+        <p class="w3-large">
+            The teaching team needed a team-based consulting simulation that
+            unfolded over multiple class days while still giving students a safe
+            way to practice independently, and complete the simulation remotely with a team.
+        </p>
+        <p>
+           The experience needed to release each level according to the course
+            schedule, prevent teams from moving ahead early, and preserve the
+            continuity of a consulting engagement across several sessions. At the
+            same time, students needed a solo practice mode that would not interfere
+            with their team’s official decisions or progress.
+        </p>
+       <p> The simulation also needed to respond meaningfully to accumulated
+            decisions. It had to score strategic behavior without reducing the case
+            to one correct answer, deliver different disruptions to different teams,
+            generate personalized midpoint and final feedback, and remain usable
+            when teams changed scribes or devices.</p>
+             <p>
+            Finally, the program office and teaching team needed a maintainable
+            system. Future administrators had to be able to revise content,
+            scoring, schedules, and feedback without reverse-engineering custom
+            code or rebuilding the Qualtrics survey.
+        </p>
+            
+    </section>
+
+    <!-- Solution -->
+    <section
+    id="solution"
+    class="project-section w3-padding-32"
+    aria-labelledby="solution-heading">
+        <h2 id="solution-heading">The solution</h2>
+
+       <p>
+            I designed and developed a multi-level Qualtrics simulation that places
+            student teams in the role of consultants to a fictional organization.
+        </p>
+
+         <p>
+            I created separate solo and team pathways. Solo mode allows students to
+            explore the case independently and bypass selected collaborative
+            requirements for practice. Team mode records the group’s official
+            decisions, assigns a consistent curveball, and moves the team through
+            the experience according to the course schedule.
+        </p>
+
+        <p>
+            I also developed time-locking logic that controls when each level
+            becomes available. This addressed a central instructional requirement:
+            all teams could complete the experience over several days without
+            accessing later developments before the teaching team intended to
+            release them.
+        </p>
+
+        <p>
+            Behind the interface, JavaScript manages cumulative scores, completed
+            nodes, team assignments, recap logs, randomized content, midpoint
+            diagnostics, final archetypes, and recovery behavior. Configuration
+            data is maintained outside Qualtrics in CSV files, validated and
+            transformed with R, and loaded as JSON at runtime.
+        </p>
+
+        <p>
+            This architecture separates content from application logic. Faculty can
+            revise question text, scores, curveballs, and archetype feedback without
+            editing every Qualtrics question, while the core JavaScript remains
+            reusable across the simulation.
+        </p>
+
+
+    </section>
+
+    <!-- How it works -->
+    <section
+    id="how-it-works"
+    class="project-section w3-padding-32"
+    aria-labelledby="process-heading">
+        <h2 id="process-heading">How it works</h2>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-theme-d1 w3-container w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>1</strong></p>
+                    <h3>Practice independently</h3>
+                   <p> Students can enter solo mode to explore the case before
+                        working with their teams. The solo pathway adapts or bypasses
+                        selected collaborative requirements without altering the
+                        team’s official response.</p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>2</strong></p>
+                    <h3>Progress as a team</h3>
+                    <p>
+                        In team mode, students make five decisions per level and
+                        document their reasoning. Time locks coordinate the
+                        multi-day release schedule so teams cannot proceed until the
+                        next stage opens.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>3</strong></p>
+                    <h3>Respond and reflect</h3>
+                    <p>
+                       Teams respond to an assigned curveball, review recaps of
+                        earlier decisions, receive a midpoint diagnostic, and finish
+                        with a personalized strategic archetype and debrief.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- My contribution -->
+    <section
+    id="contribution"
+    class="project-section w3-padding-32"
+    aria-labelledby="contribution-heading">
+        <h2 id="contribution-heading">My contribution</h2>
+
+        <ul class="w3-ul">
+            <li>
+                Architected the simulation as a multi-level application in
+                Qualtrics rather than a conventional linear survey.
+            </li>
+
+            <li>
+                Designed and implemented separate solo and team modes with
+                mode-specific behavior, assignments, and progression rules.
+            </li>
+
+            <li>
+                Developed the date- and time-locking system used to coordinate
+                level releases across multiple class sessions.
+            </li>
+
+            <li>
+                Built a reusable JavaScript scoring engine that loads records by
+                QID, calculates five cumulative dimensions, prevents duplicate
+                scoring, and handles restored answers.
+            </li>
+
+            <li>
+                Developed persistent state management using Qualtrics embedded data
+                for scores, completed nodes, Team IDs, assignments, recaps,
+                midpoint results, and final outcomes.
+            </li>
+
+            <li>
+                Implemented deterministic group curveball assignments and random
+                solo assignments from a configurable content library.
+            </li>
+
+            <li>
+                Created dynamic recap logs that combine CSV-managed question titles
+                with each team’s recorded Qualtrics selections.
+            </li>
+
+            <li>
+                Programmed midpoint and final profile calculations that connect
+                teams’ accumulated decisions to personalized diagnostic and
+                archetype feedback.
+            </li>
+
+            <li>
+                Separated question content, scoring data, curveballs, settings, and
+                archetype feedback into independently editable configuration files.
+            </li>
+
+            <li>
+                Wrote R scripts to validate CSV schemas, handle encoding problems,
+                detect missing or duplicate records, and generate JSON for
+                Qualtrics.
+            </li>
+
+            <li>
+                Developed browser-cache recovery so configuration can be restored
+                when students resume the survey, close a browser, or transfer
+                scribe responsibilities to another device.
+            </li>
+
+            <li>
+                Added a development mode with technical diagnostics, version
+                reporting, validation messages, and detailed error handling.
+            </li>
+
+            <li>
+                Built accessible HTML and CSS components for scored questions,
+                timed-release messages, recaps, curveballs, midpoint diagnostics,
+                and final debriefs.
+            </li>
+
+            <li>
+                Created and maintained the technical documentation for the teaching
+                team, program office, and future system administrators.
+            </li>
+
+       
+        </ul>
+    </section>
+
+    <!-- Learning experience -->
+    
+<section
+    id="learning-experience"
+    class="project-section w3-padding-32"
+    aria-labelledby="experience-heading">
+        <h2 id="experience-heading">The learning experience</h2>
+       <p>
+            Students advise a fictional independent baseball organization seeking
+            to become a higher-drawing regional attraction while improving a modest
+            historical profit margin. Before entering the simulation, they review a
+            case study and supporting fictional financial documents.
+        </p>
+
+        <p>
+            The experience contains four levels with five decisions in each level.
+            Each option contributes evidence across five strategic dimensions.
+        </p>
+
+        <p>
+            The scoring model does not treat strategy as a single correct path.
+            Choices represent different strengths and trade-offs, and teams’
+            cumulative patterns determine the feedback they receive.
+        </p>
+
+        <p>
+            A curveball introduces a regional development that forces each team to
+            reconsider its direction. The team must decide whether the new
+            information reinforces, challenges, or changes its strategy.
+        </p>
+
+        <p>
+            Recap pages restore continuity across sessions by showing teams their
+            earlier decisions. This is especially useful when scribe
+            responsibilities rotate. A midpoint diagnostic describes the pattern
+            emerging from the team’s choices, and the final debrief assigns one of
+            five strategic archetypes.
+        </p>
+
+        <p>
+            Each archetype includes a philosophy, core strengths, an inherent
+            strategic trade-off, midpoint guidance, and an implementation-focused
+            final debrief.
+        </p>
+
+
+    </section>
+
+
+
+
+
+    <nav class="w3-padding-32" aria-label="Project navigation">
+        <a href="/#portfolio" class="w3-button w3-black">
+            &larr; Back to all projects
+        </a>
+    </nav>
+
+            </div><!-- End inner w3-container -->
+        </div><!-- End projectContent -->
+
+    </div><!-- End w3-row-padding -->
+</div><!-- End w3-content -->
+
+
+<script>
+
+    const sidebar = document.getElementById("projectSidebar");
+    const content = document.getElementById("projectContent");
+    const buttonContainer = document.getElementById("projectNavButton");
+    const openButton = document.getElementById("openProjectNav");
+    const sectionLinks = document.querySelectorAll(".project-section-link");
+    const sections = document.querySelectorAll(".project-section");
+
+    function openProjectNav() {
+        sidebar.style.display = "block";
+        content.className = "w3-col l9 m8 s12";
+        buttonContainer.style.display = "none";
+
+        openButton.setAttribute("aria-expanded", "true");
+
+        updateActiveSection();
+    }
+
+    function closeProjectNav() {
+        sidebar.style.display = "none";
+        content.className = "w3-col l12 m12 s12";
+        buttonContainer.style.display = "block";
+
+        openButton.setAttribute("aria-expanded", "false");
+        openButton.focus();
+    }
+
+    function updateActiveSection() {
+        const navigationOffset = 100;
+        let activeSectionId = sections[0]?.id;
+
+        sections.forEach(function (section) {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop <= navigationOffset) {
+                activeSectionId = section.id;
+            }
+        });
+
+        sectionLinks.forEach(function (link) {
+            const targetId = link.getAttribute("href").substring(1);
+            const isActive = targetId === activeSectionId;
+
+            link.classList.toggle("w3-theme-d3", isActive);
+            link.classList.toggle("w3-text-white", isActive);
+
+            if (isActive) {
+                link.setAttribute("aria-current", "location");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", updateActiveSection);
+    window.addEventListener("resize", updateActiveSection);
+
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            sidebar.style.display === "block"
+        ) {
+            closeProjectNav();
+        }
+    });
+
+  openButton.setAttribute("aria-expanded", "true");
+updateActiveSection();
+</script>
+
+
+
+

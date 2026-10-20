@@ -1,0 +1,541 @@
+---
+layout: base.njk
+title: Leadership Coach
+permalink: /leadership-coach/
+---
+
+<header
+    id="project-top"
+    class="w3-container w3-center w3-theme-d2 w3-padding-64">
+    <div class="w3-content">
+      
+
+        <h1>AI-Enabled Leadership Coach</h1>
+
+        <p class="w3-large">
+           A scaffolded leadership-development assignment that uses a private
+            student dataset and structured AI coaching conversations to provide
+            individualized pattern analysis, support reflection, and prepare
+            students for a final leadership playbook.
+        </p>
+    </div>
+</header>
+
+
+<div class="w3-content w3-padding-64">
+
+    <!-- Button shown when project navigation is closed -->
+<div
+    id="projectNavButton"
+    class="w3-container w3-margin-bottom"
+    style="display:none;">
+
+        <button
+            id="openProjectNav"
+            type="button"
+            class="w3-button w3-theme-d3"
+            onclick="openProjectNav()"
+            aria-controls="projectSidebar"
+            aria-expanded="true">
+
+            &#9776; Project sections
+        </button>
+    </div>
+
+    <div class="w3-row-padding">
+
+        <!-- Project-specific navigation -->
+        <aside
+            id="projectSidebar"
+            class="w3-col l3 m4 s12"
+            style="display:block;"
+            aria-label="Project sections">
+
+            <nav class="w3-card w3-bar-block w3-theme-l5">
+
+                <button
+                    type="button"
+                    class="w3-bar-item w3-button w3-theme-d3"
+                    onclick="closeProjectNav()">
+
+                    Close &times;
+                </button>
+
+                <div class="w3-container w3-padding">
+                    <strong>Project sections</strong>
+                </div>
+
+                <a
+                    href="#project-overview"
+                    class="project-section-link w3-bar-item w3-button">
+                    Project overview
+                </a>
+
+                <a
+                    href="#challenge"
+                    class="project-section-link w3-bar-item w3-button">
+                    The challenge
+                </a>
+
+                <a
+                    href="#solution"
+                    class="project-section-link w3-bar-item w3-button">
+                    The solution
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="project-section-link w3-bar-item w3-button">
+                    How it works
+                </a>
+
+                <a
+                    href="#contribution"
+                    class="project-section-link w3-bar-item w3-button">
+                    My contribution
+                </a>
+
+                <a
+                    href="#learning-experience"
+                    class="project-section-link w3-bar-item w3-button">
+                    The learning experience
+                </a>
+
+                <a
+                    href="#project-top"
+                    class="w3-bar-item w3-button">
+                    Back to project top
+                </a>
+
+            </nav>
+        </aside>
+
+        <!-- Main project content -->
+  <div
+    id="projectContent"
+    class="w3-col l9 m8 s12">
+
+            <div class="w3-container">
+
+  <!-- Project overview -->
+   <section
+    id="project-overview"
+    class="project-section"
+    aria-labelledby="overview-heading">
+        <h2 id="overview-heading">Project overview</h2>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l7 m7 s12">
+                <img src="/assets/images/BA534.png" alt="A screen shot from the Canvas site"
+                    class="w3-image w3-card">
+            </div>
+
+            <div class="w3-col l5 m5 s12">
+                <div class="w3-card w3-container w3-theme-l3 w3-padding">
+                    <h3>At a glance</h3>
+
+                    <p>
+                        <strong>Launch:</strong><br>
+                        Winter 2026
+                    </p>
+
+                    
+
+                    <p>
+                        <strong>Audience:</strong><br>
+                        Graduated students enrolled in the <em>Business Leadership Residency</em> course at U of
+                        M.
+                    </p>
+
+                    <p>
+                        <strong>Tools:</strong><br>
+                        Notebook LM, Canvas, HTML, CSS, and course-design
+                        documentation
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Challenge -->
+   <section
+    id="challenge"
+    class="project-section w3-padding-64"
+    aria-labelledby="challenge-heading">
+        <h2 id="challenge-heading">The challenge</h2>
+
+        <p class="w3-large">
+            Faculty wanted every student to receive individualized feedback on
+            their leadership experiences, strengths, performance conditions, and
+            recurring behavioral patterns. Providing that level of personal
+            analysis manually was not feasible at the scale of the course.
+        </p>
+        <p>
+            The course already required students to complete multiple assessments,
+            reflections, and phase-based assignments. The final assignment needed
+            to use that work rather than ask students to start over. The design
+            needed to help students combine their existing materials, identify
+            connections across them, and turn those findings into a practical
+            leadership playbook.
+        </p>
+
+        <p>
+            The faculty member also wanted students to receive observations they
+            might not generate independently. This included patterns across
+            assignments, possible contradictions, repeated strengths, responses
+            to pressure, and relationships among experiences that students had
+            recorded at different points in the course.
+        </p>
+
+        <p>
+            Generative AI could support this type of individualized pattern
+            analysis, but its use introduced several design requirements:
+        </p>
+
+        <ul>
+            <li>
+                Students needed to retain control over what personal information
+                they provided to the AI.
+            </li>
+
+            <li>
+                The workflow needed to use an approved environment appropriate
+                for course-related student data.
+            </li>
+
+            <li>
+                Students needed to evaluate AI feedback instead of treating it as
+                authoritative or automatically accurate.
+            </li>
+
+            <li>
+                Instructions had to work for students with substantially different
+                levels of AI experience.
+            </li>
+
+            <li>
+                The assignment needed assessable criteria that did not grade
+                students on private disclosures or on the quality of text generated
+                by the AI.
+            </li>
+        </ul>
+
+       
+            
+    </section>
+
+    <!-- Solution -->
+   <section
+    id="solution"
+    class="project-section w3-padding-32"
+    aria-labelledby="solution-heading">
+        <h2 id="solution-heading">The solution</h2>
+
+       <p>
+            I designed a multi-stage workflow that separates data collection,
+            AI-supported analysis, student evaluation, and final synthesis.
+        </p>
+
+        <p>
+            First, students assemble selected work from the course into a personal
+            leadership database. This gives the AI a bounded source of
+            student-provided information rather than relying on a single prompt or
+            an unstructured conversation.
+        </p>
+
+        <p>
+            Students then use a set of structured prompts to engage an AI coach in
+            their individual Notebook. The prompts ask the AI to analyze the
+            student-provided material, identify recurring patterns, surface
+            potential connections, and ask follow-up questions. Students may
+            continue the conversation for as long as it remains useful.
+        </p>
+
+        <p>
+            The AI does not produce the final assignment. After each coaching
+            conversation, students write their own evaluation of the response.
+            They identify which observations were relevant, which were new or
+            useful, and which were inaccurate, unsupported, or off-target.
+        </p>
+
+        <p>
+            Students then use their prior work, the coaching conversation, and
+            their evaluations of the AI's feedback to develop a final leadership
+            playbook. This creates a traceable progression from course evidence to
+            AI-assisted analysis to student-authored conclusions.
+        </p>
+
+        <p>
+            The workflow provides individualized analysis without representing the
+            AI as a substitute for faculty expertise. Faculty assess the student's
+            interpretation, evidence, application of course concepts, and final
+            synthesis rather than attempting to grade the AI-generated response.
+        </p>
+
+    </section>
+
+    <!-- How it works -->
+<section
+    id="how-it-works"
+    class="project-section w3-padding-32"
+    aria-labelledby="process-heading">
+        <h2 id="process-heading">How it works</h2>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>1</strong></p>
+                    <h3>Build their leadership database</h3>
+                   <p>  Students select and organize relevant work from earlier
+                        assessments, reflections, and Key Deliverables. This
+                        creates the source material for the coaching activity and
+                        reduces the need to recreate prior work.</p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>2</strong></p>
+                    <h3>Run coaching conversation</h3>
+                    <p>
+                        Students paste structured prompts into their Notebook and
+                        add their own responses where indicated. The AI analyzes
+                        only the information available in the Notebook and
+                        highlights patterns it detects in the student's data.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col l4 m6 s12 w3-margin-bottom">
+                <div class="w3-card w3-container w3-theme-d1 w3-padding" style="height:100%;">
+                    <p class="w3-xxlarge"><strong>3</strong></p>
+                    <h3>Evaluate the AI response</h3>
+                    <p>
+                      After each prompt, students write a brief evaluation of the
+                        AI's suggestions. They identify useful insights, test claims
+                        against their own evidence, and document anything that was
+                        incorrect, generic, or unsupported.
+                    </p>
+                </div>
+            </div>
+        
+
+        </div>
+    </section>
+
+    <!-- My contribution -->
+<section
+    id="contribution"
+    class="project-section w3-padding-32"
+    aria-labelledby="contribution-heading">
+        <h2 id="contribution-heading">My contribution</h2>
+
+        <ul class="w3-ul">
+            <li>
+                Analyzed the instructional and operational constraints associated
+                with providing individualized leadership feedback at course scale.
+            </li>
+
+            <li>
+                Designed a workflow that uses AI for individualized pattern
+                analysis while retaining student responsibility for interpretation
+                and final conclusions.
+            </li>
+
+            <li>
+                Connected students' prior assessments, reflections, and
+                phase-based assignments to a structured personal leadership
+                database.
+            </li>
+
+            <li>
+                Developed the sequence from source-material collection to AI
+                coaching, student evaluation, synthesis, and final playbook
+                production.
+            </li>
+
+            <li>
+                Wrote step-by-step AI interaction instructions for students with
+                different levels of technical experience.
+            </li>
+
+            <li>
+                Structured prompts to help the AI identify recurring themes,
+                strengths, contradictions, performance conditions, and
+                pressure-related patterns in student-provided data.
+            </li>
+
+            <li>
+                Required students to evaluate AI feedback for relevance, accuracy,
+                specificity, and evidentiary support.
+            </li>
+
+            <li>
+                Established a clear division between AI-generated content and
+                assessable student work.
+            </li>
+
+        
+           
+
+            <li>
+                Incorporated privacy controls into the activity by limiting the
+                workflow to the approved environment and maintaining student
+                control over submitted information.
+            </li>
+
+           
+
+            
+
+            <li>
+                Structured the broader assessment model around smaller supporting
+                activities, three phase-end Key Deliverables, and a final
+                integrative assignment.
+            </li>
+
+       
+        </ul>
+    </section>
+
+
+<section
+    id="learning-experience"
+    class="project-section w3-padding-32"
+    aria-labelledby="experience-heading">
+        <h2 id="experience-heading">The learning experience</h2>
+       <p>
+            Students advise a fictional independent baseball organization seeking
+            to become a higher-drawing regional attraction while improving a modest
+            historical profit margin. Before entering the simulation, they review a
+            case study and supporting fictional financial documents.
+        </p>
+
+        <p>
+            The experience contains four levels with five decisions in each level.
+            Each option contributes evidence across five strategic dimensions.
+        </p>
+
+        <p>
+            The scoring model does not treat strategy as a single correct path.
+            Choices represent different strengths and trade-offs, and teams’
+            cumulative patterns determine the feedback they receive.
+        </p>
+
+        <p>
+            A curveball introduces a regional development that forces each team to
+            reconsider its direction. The team must decide whether the new
+            information reinforces, challenges, or changes its strategy.
+        </p>
+
+        <p>
+            Recap pages restore continuity across sessions by showing teams their
+            earlier decisions. This is especially useful when scribe
+            responsibilities rotate. A midpoint diagnostic describes the pattern
+            emerging from the team’s choices, and the final debrief assigns one of
+            five strategic archetypes.
+        </p>
+
+        <p>
+            Each archetype includes a philosophy, core strengths, an inherent
+            strategic trade-off, midpoint guidance, and an implementation-focused
+            final debrief.
+        </p>
+
+
+    </section>
+
+
+
+
+
+    <nav class="w3-padding-32" aria-label="Project navigation">
+        <a href="/#portfolio" class="w3-button w3-black">
+            &larr; Back to all projects
+        </a>
+    </nav>
+
+            </div><!-- End inner w3-container -->
+        </div><!-- End projectContent -->
+
+    </div><!-- End w3-row-padding -->
+</div><!-- End w3-content -->
+
+
+<script>
+
+    const sidebar = document.getElementById("projectSidebar");
+    const content = document.getElementById("projectContent");
+    const buttonContainer = document.getElementById("projectNavButton");
+    const openButton = document.getElementById("openProjectNav");
+    const sectionLinks = document.querySelectorAll(".project-section-link");
+    const sections = document.querySelectorAll(".project-section");
+
+    function openProjectNav() {
+        sidebar.style.display = "block";
+        content.className = "w3-col l9 m8 s12";
+        buttonContainer.style.display = "none";
+
+        openButton.setAttribute("aria-expanded", "true");
+
+        updateActiveSection();
+    }
+
+    function closeProjectNav() {
+        sidebar.style.display = "none";
+        content.className = "w3-col l12 m12 s12";
+        buttonContainer.style.display = "block";
+
+        openButton.setAttribute("aria-expanded", "false");
+        openButton.focus();
+    }
+
+    function updateActiveSection() {
+        const navigationOffset = 100;
+        let activeSectionId = sections[0]?.id;
+
+        sections.forEach(function (section) {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop <= navigationOffset) {
+                activeSectionId = section.id;
+            }
+        });
+
+        sectionLinks.forEach(function (link) {
+            const targetId = link.getAttribute("href").substring(1);
+            const isActive = targetId === activeSectionId;
+
+            link.classList.toggle("w3-theme-d3", isActive);
+            link.classList.toggle("w3-text-white", isActive);
+
+            if (isActive) {
+                link.setAttribute("aria-current", "location");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", updateActiveSection);
+    window.addEventListener("resize", updateActiveSection);
+
+    document.addEventListener("keydown", function (event) {
+        if (
+            event.key === "Escape" &&
+            sidebar.style.display === "block"
+        ) {
+            closeProjectNav();
+        }
+    });
+
+  openButton.setAttribute("aria-expanded", "true");
+updateActiveSection();
+</script>
+
+
+
+

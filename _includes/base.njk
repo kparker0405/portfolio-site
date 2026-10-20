@@ -1,23 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>{{ title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }} | My Portfolio</title>
+
+    <script
+        src="https://kit.fontawesome.com/8944646b17.js"
+        crossorigin="anonymous">
+    </script>
+
+    <link
+        rel="stylesheet"
+        href="https://www.w3schools.com/w3css/6/w3.css">
+
+    <link
+        rel="stylesheet"
+        href="/assets/css/main.css">
 </head>
 
+<body class="w3-theme-l4">
 
-<body>
-  <header>
-    <p style="font-size:8px">Made by Kat Parker</p>
-  </header>
+    <header class="site-header">
+        <nav
+            class="w3-bar w3-border w3-top w3-theme-d5"
+            id="nav"
+            aria-label="Main navigation">
 
+            <a
+                href="/#top"
+                class="navbar-link w3-bar-item w3-button">
+                Top
+            </a>
 
-  {{ content | safe }}
+            <a
+                href="/#portfolio"
+                class="navbar-link w3-bar-item w3-button">
+                Portfolio
+            </a>
 
+            <a
+                href="/#tools"
+                class="navbar-link w3-bar-item w3-button">
+                Tools I Use
+            </a>
 
+            <a
+                href="/#about-me"
+                class="navbar-link w3-bar-item w3-button">
+                About Me
+            </a>
+
+        </nav>
+    </header>
+
+    <main class="w3-padding-64 ">
+        {{ content | safe }}
+    </main>
+
+    <footer class="w3-container w3-padding w3-theme-d1">
+        <div class="w3-content">
+            <div class="w3-row-padding">
+                <div class="w3-col m4 l4">
+                    <p>Copyright &copy; 2026 Kat Parker</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const globalNavLinks =
+                document.querySelectorAll(".navbar-link");
+
+            /*
+             * Get the section IDs from the navigation links.
+             * Using URL.hash correctly handles links such as /#portfolio.
+             */
+            const globalSections = Array.from(globalNavLinks)
+                .map(function (link) {
+                    const linkURL = new URL(link.href, window.location.origin);
+                    const sectionID = linkURL.hash.replace("#", "");
+
+                    return document.getElementById(sectionID);
+                })
+                .filter(function (section) {
+                    return section !== null;
+                });
+
+            function clearGlobalNavigation() {
+                globalNavLinks.forEach(function (link) {
+                    link.classList.remove(
+                        "w3-theme-l2",
+                        "w3-text-black"
+                    );
+
+                    link.removeAttribute("aria-current");
+                });
+            }
+
+            function setActiveGlobalLink(activeSectionID) {
+                clearGlobalNavigation();
+
+                globalNavLinks.forEach(function (link) {
+                    const linkURL =
+                        new URL(link.href, window.location.origin);
+
+                    const targetID =
+                        linkURL.hash.replace("#", "");
+
+                    if (targetID === activeSectionID) {
+                        link.classList.add(
+                            "w3-theme-l2",
+                            "w3-text-black"
+                        );
+
+                        link.setAttribute(
+                            "aria-current",
+                            "location"
+                        );
+                    }
+                });
+            }
+
+            function updateGlobalNavigation() {
+                /*
+                 * The homepage contains the sections monitored by this script.
+                 * On portfolio project pages, those sections are not present.
+                 */
+                if (globalSections.length === 0) {
+                    /*
+                     * Highlight Portfolio when the visitor is viewing a
+                     * separate portfolio project page.
+                     */
+                    if (window.location.pathname !== "/") {
+                        setActiveGlobalLink("portfolio");
+                    }
+
+                    return;
+                }
+
+                /*
+                 * This should be slightly larger than the height of the
+                 * fixed global navigation.
+                 */
+                const navigationOffset = 100;
+
+                let activeSectionID = globalSections[0].id;
+
+                globalSections.forEach(function (section) {
+                    const sectionTop =
+                        section.getBoundingClientRect().top;
+
+                    if (sectionTop <= navigationOffset) {
+                        activeSectionID = section.id;
+                    }
+                });
+
+                /*
+                 * Ensure the final section becomes active when the visitor
+                 * reaches the bottom of the page.
+                 */
+                const reachedPageBottom =
+                    window.innerHeight + window.scrollY >=
+                    document.documentElement.scrollHeight - 10;
+
+                if (reachedPageBottom && globalSections.length > 0) {
+                    activeSectionID =
+                        globalSections[globalSections.length - 1].id;
+                }
+
+                setActiveGlobalLink(activeSectionID);
+            }
+
+            window.addEventListener(
+                "scroll",
+                updateGlobalNavigation,
+                { passive: true }
+            );
+
+            window.addEventListener(
+                "resize",
+                updateGlobalNavigation
+            );
+
+            window.addEventListener(
+                "hashchange",
+                updateGlobalNavigation
+            );
+
+            updateGlobalNavigation();
+        })();
+    </script>
+
+</body>
 
 </html>
