@@ -21,7 +21,7 @@ permalink: /
 
       <div class="w3-col l4 m5 s12 w3-center w3-theme-d1">
        
-          <img src="/assets/images/headshot_square_side.jpg"
+          <img src="{{ '/assets/images/headshot_square_side.jpg' | url }}"
           alt="Portrait of Kat Parker"
           class="w3-image w3-circle"
           style="width:100%; max-width:350px;"
@@ -44,7 +44,9 @@ permalink: /
         </p>
 
         <a
-          href="#portfolio"
+
+       href= "{{ '/#portfolio' | url }}"
+          
           class="w3-button w3-black w3-padding-large w3-margin-top"
         >
           See my work
@@ -90,7 +92,7 @@ permalink: /
             </p>
         </div>
            <footer class="w3-container w3-theme-l5 w3-padding">
-            <a href="/healthcare-simulation/" class="w3-button w3-black w3-hover-shadow w3-border w3-round-large">
+            <a href="{{ '/healthcare-simulation/' | url }}"  class="w3-button w3-black w3-hover-shadow w3-border w3-round-large">
                 Learn More →
             </a>
         </footer>
@@ -111,7 +113,7 @@ permalink: /
         </div>
 
           <footer class="w3-container w3-theme-l5 w3-padding">
-            <a href="/consulting-simulation/" class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
+            <a a href="{{ '/consulting-simulation/' | url }}" class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
         </footer>
     </article>
    <article
@@ -128,7 +130,7 @@ permalink: /
                 with their peers.</p>
         </div>
           <footer class="w3-container w3-theme-l5 w3-padding">
-            <a href="/negotiation-simulation/" class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
+            <a a href="{{ '/negotiation-simulation/' | url }}"  class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
         </footer>
     </article>
    <article
@@ -146,7 +148,7 @@ permalink: /
                 students for a final leadership playbook.</p>
         </div>
            <footer class="w3-container w3-theme-l5 w3-padding">
-            <a href="/leadership-coach/" class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
+            <a a href="{{ '/leadership-coach/' | url }}"  class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
         </footer>
     </article>
     <article
@@ -163,7 +165,7 @@ permalink: /
                 reflection activities, and a Blackboard assessment.</p>
         </div>
            <footer class="w3-container w3-theme-l5 w3-padding">
-            <a href="/swce/" class="w3-button w3-black w3-border w3-hover-shadow w3-round-large">Learn More →</a>
+            <a a href="{{ '/swce/' | url }}" class="w3-button w3-black w3-border w3-hover-shadow w3-round-large">Learn More →</a>
     </article>
 </div>
 </section>
@@ -246,25 +248,30 @@ permalink: /
 
                 <img
                     class="mySlides w3-image"
-                    src="/assets/images/livy1.jpg"
+
+                      src="{{ '/assets/images/livy1.jpg' | url }}"
+                    
                     alt="Livy, my dog"
                     style="width:100%;display:block;">
 
                 <img
                     class="mySlides w3-image"
-                    src="/assets/images/cats.jpg"
+                      src="{{ '/assets/images/cats.jpg' | url }}"
+                   
                     alt="My two cats"
                     style="width:100%;display:none;">
 
                 <img
                     class="mySlides w3-image"
-                    src="/assets/images/livy2.jpg"
+                      src="{{ '/assets/images/livy2.jpg' | url }}"
+                    
                     alt="Another photo of Livy"
                     style="width:100%;display:none;">
 
                 <img
                     class="mySlides w3-image"
-                    src="/assets/images/linda.jpg"
+                      src="{{ '/assets/images/linda.jpg' | url }}"
+                   
                     alt="Linda"
                     style="width:100%;display:none;">
 

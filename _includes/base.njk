@@ -16,12 +16,12 @@
     </script>
 
     <link
-        rel="stylesheet"
-        href="https://www.w3schools.com/w3css/6/w3.css">
+    rel="stylesheet"
+    href="https://www.w3schools.com/w3css/6/w3.css">
 
-    <link
-        rel="stylesheet"
-        href="/assets/css/main.css">
+<link
+    rel="stylesheet"
+    href="{{ '/assets/css/main.css' | url }}">
 </head>
 
 <body class="w3-theme-l4">
@@ -33,25 +33,28 @@
             aria-label="Main navigation">
 
             <a
-                href="/#top"
+             href="{{ '/#top' | url }}" 
                 class="navbar-link w3-bar-item w3-button">
                 Top
             </a>
 
             <a
-                href="/#portfolio"
+             href="{{ '/#portfolio' | url }}" 
+               
                 class="navbar-link w3-bar-item w3-button">
                 Portfolio
             </a>
 
             <a
-                href="/#tools"
+
+                href="{{ '/#tools' | url }}" 
+            
                 class="navbar-link w3-bar-item w3-button">
                 Tools I Use
             </a>
 
             <a
-                href="/#about-me"
+              href="{{ '/#about-me' | url }}"    
                 class="navbar-link w3-bar-item w3-button">
                 About Me
             </a>
