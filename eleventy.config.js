@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/portfolio-site/",
+    pathPrefix: "/THIS IS THE CONFIGFILEportfolio-site/",
     dir: {
       input: "content",
       includes: "../_includes",
