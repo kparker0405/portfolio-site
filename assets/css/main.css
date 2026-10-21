@@ -24,10 +24,9 @@
 
 
 .portfolio-background {
-    background-color: #f8fafc;
     background-image: radial-gradient(
         circle,
-        rgba(100, 116, 139, 0.4) 1px,
+        #becbd2 1px,
         transparent 1px
     );
     background-size: 22px 22px;
