@@ -13,13 +13,13 @@ permalink: /
 
 <!-- Hero -->
 <section id="top" class="w3-container w3-padding-64">
-  <div class="w3-content w3-theme-d1">
+  <div class="w3-content w3-theme-dark">
     <div class="w3-row-padding w3-display-container">
 
       <!-- Photo -->
 
 
-      <div class="w3-col l4 m5 s12 w3-center w3-theme-d1">
+      <div class="w3-col l4 m5 s12 w3-center w3-theme-dark">
        
           <img src="https://kparker0405.github.io/portfolio-site/assets/images/headshot_square_side.jpg"
           alt="Portrait of Kat Parker"
@@ -47,9 +47,9 @@ permalink: /
 
        href= "{{ '/#portfolio' | url }}"
           
-          class="w3-button w3-black w3-padding-large w3-margin-top"
+          class="w3-button w3-border-theme w3-theme-light w3-padding-large w3-margin-top"
         >
-          See my work
+          See my work →
         </a>
       </div>
 
@@ -71,19 +71,38 @@ permalink: /
     <div class="w3-content">
 
         <header>
-            <h2>Here’s some stuff I made recently.</h2>
+            <h2>Here are some of my recent projects</h2>
            
         </header>
 
 <div class="w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+     <article
+        class="w3-card "
+        style="display:flex;flex-direction:column;min-width:0;">
+        <header class="w3-container w3-theme">
+            <h3>Business Consulting Strategy Simulation</h3>
+        </header>
+
+       <div
+            class="w3-container w3-theme-light"
+            style="flex:1;overflow-wrap:anywhere;">
+            <p> A multi-level Qualtrics simulation with dynamic content, persistent
+                scoring, timed progression, randomized disruptions, and personalized
+                strategic feedback for graduate consulting teams.</p>
+        </div>
+
+          <footer class="w3-container w3-theme-l4 w3-padding">
+            <a a href="{{ '/consulting-simulation/' | url }}" class="w3-button w3-hover-shadow w3-theme-action w3-border w3-round-large">Learn More →</a>
+        </footer>
+    </article>
     <article
         class="w3-card"
         style="display:flex;flex-direction:column;min-width:0;">
-        <header class="w3-container w3-theme-d1">
+        <header class="w3-container w3-theme">
             <h3>Employer-Sponsored Health Care Simulation</h3>
         </header>
         <div
-            class="w3-container w3-theme-l3"
+            class="w3-container w3-theme-light"
             style="flex:1;overflow-wrap:anywhere;">
             <p>
                 An interactive simulation that helps students understand the
@@ -91,81 +110,63 @@ permalink: /
                 health plan.
             </p>
         </div>
-           <footer class="w3-container w3-theme-l5 w3-padding">
-            <a href="{{ '/healthcare-simulation/' | url }}"  class="w3-button w3-black w3-hover-shadow w3-border w3-round-large">
+           <footer class="w3-container w3-theme-l4 w3-padding">
+            <a href="{{ '/healthcare-simulation/' | url }}"  class="w3-button w3-theme-action w3-hover-shadow w3-border w3-round-large">
                 Learn More →
             </a>
         </footer>
     </article>
-    <article
-        class="w3-card "
-        style="display:flex;flex-direction:column;min-width:0;">
-        <header class="w3-container w3-theme-d1">
-            <h3>Business Consulting Strategy Simulation</h3>
-        </header>
-
-       <div
-            class="w3-container w3-theme-l3"
-            style="flex:1;overflow-wrap:anywhere;">
-            <p> A multi-level Qualtrics simulation with dynamic content, persistent
-                scoring, timed progression, randomized disruptions, and personalized
-                strategic feedback for graduate consulting teams.</p>
-        </div>
-
-          <footer class="w3-container w3-theme-l5 w3-padding">
-            <a a href="{{ '/consulting-simulation/' | url }}" class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
-        </footer>
-    </article>
    <article
         class="w3-card "
         style="display:flex;flex-direction:column;min-width:0;">
-        <header class="w3-container w3-theme-d1">
-            <h3>AI Negotiation Partner</h3>
-        </header>
-        <div
-            class="w3-container w3-theme-l3"
-            style="flex:1;overflow-wrap:anywhere;">
-            <p>An AI-powered simulation that gives business students repeated,
-                independent practice with negotiation strategy before they negotiate
-                with their peers.</p>
-        </div>
-          <footer class="w3-container w3-theme-l5 w3-padding">
-            <a a href="{{ '/negotiation-simulation/' | url }}"  class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
-        </footer>
-    </article>
-   <article
-        class="w3-card "
-        style="display:flex;flex-direction:column;min-width:0;">
-        <header class="w3-container w3-theme-d1">
+        <header class="w3-container w3-theme">
             <h3>AI-Enabled Leadership Coach</h3>
         </header>
         <div
-            class="w3-container w3-theme-l3"
+            class="w3-container w3-theme-light"
             style="flex:1;overflow-wrap:anywhere;">
             <p> A scaffolded leadership-development assignment that uses a private
                 student dataset and structured AI coaching conversations to provide
                 individualized pattern analysis, support reflection, and prepare
                 students for a final leadership playbook.</p>
         </div>
-           <footer class="w3-container w3-theme-l5 w3-padding">
-            <a a href="{{ '/leadership-coach/' | url }}"  class="w3-button w3-hover-shadow w3-black w3-border w3-round-large">Learn More →</a>
+           <footer class="w3-container w3-theme-l4 w3-padding">
+            <a a href="{{ '/leadership-coach/' | url }}"  class="w3-button w3-hover-shadow w3-theme-action w3-border w3-round-large">Learn More →</a>
         </footer>
     </article>
+   <article
+        class="w3-card "
+        style="display:flex;flex-direction:column;min-width:0;">
+        <header class="w3-container w3-theme">
+            <h3>AI Negotiation Partner</h3>
+        </header>
+        <div
+            class="w3-container w3-theme-light"
+            style="flex:1;overflow-wrap:anywhere;">
+            <p>An AI-powered simulation that gives business students repeated,
+                independent practice with negotiation strategy before they negotiate
+                with their peers.</p>
+        </div>
+          <footer class="w3-container w3-theme-l4 w3-padding">
+            <a a href="{{ '/negotiation-simulation/' | url }}"  class="w3-button w3-hover-shadow w3-theme-action w3-border w3-round-large">Learn More →</a>
+        </footer>
+    </article>
+   
     <article
         class="w3-card"
         style="display:flex;flex-direction:column;min-width:0;">
-        <header class="w3-container w3-theme-d1">
+        <header class="w3-container w3-theme">
             <h3>Social Work Continuing Education Course</h3>
         </header>
         <div
-            class="w3-container w3-theme-l3"
+            class="w3-container w3-theme-light"
             style="flex:1;overflow-wrap:anywhere;">
             <p>A two-hour, self-paced continuing education course developed in Articulate Storyline from a one-hour
                 panel interview, supplemented with peer-reviewed research, risk-assessment content, external media,
                 reflection activities, and a Blackboard assessment.</p>
         </div>
-           <footer class="w3-container w3-theme-l5 w3-padding">
-            <a a href="{{ '/swce/' | url }}" class="w3-button w3-black w3-border w3-hover-shadow w3-round-large">Learn More →</a>
+           <footer class="w3-container w3-theme-l4 w3-padding">
+            <a a href="{{ '/swce/' | url }}" class="w3-button w3-theme-action w3-border w3-hover-shadow w3-round-large">Learn More →</a>
     </article>
 </div>
 </section>
@@ -186,7 +187,7 @@ permalink: /
             <h2>Here are the tools I use</h2>
 
         </header>
-        <div class="w3-row w3-center w3-card w3-round-xlarge w3-theme-d2" style="padding-left: 64px;">
+        <div class="w3-row w3-center w3-card w3-round-xlarge w3-theme-l3" style="padding-left: 64px;">
             <div class="w3-half">
              <h3 class="w3-left-align">LMS and Course Tools</h3>
                 <ul class="w3-left-align">
@@ -239,7 +240,7 @@ permalink: /
             <h2>Here's more about me</h2>
         </header>
 
-        <div class="w3-card-4 w3-row w3-margin-top">
+        <div class="w3-card-4 w3-row w3-theme-light w3-margin-top">
 
             <!-- Slideshow -->
             <div
