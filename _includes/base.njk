@@ -22,16 +22,22 @@
 <link
     rel="stylesheet"
     href="{{ '/assets/css/main.css' | url }}">
+    href="{{ '/assets/css/main.css' | url }}">
 </head>
 
-<body class="w3-theme-l4">
+<body>
 
     <header class="site-header">
         <nav
-    class="w3-bar w3-border w3-top w3-theme-d5"
+    class="w3-bar w3-border w3-top w3-theme"
     id="nav"
     aria-label="Main navigation">
 
+    <a
+        href="{{ '/#top' | url }}"
+        class="navbar-link w3-bar-item w3-button">
+        Top
+    </a>
     <a
         href="{{ '/#top' | url }}"
         class="navbar-link w3-bar-item w3-button">
@@ -43,7 +49,17 @@
         class="navbar-link w3-bar-item w3-button">
         Portfolio
     </a>
+    <a
+        href="{{ '/#portfolio' | url }}"
+        class="navbar-link w3-bar-item w3-button">
+        Portfolio
+    </a>
 
+    <a
+        href="{{ '/#tools' | url }}"
+        class="navbar-link w3-bar-item w3-button">
+        Tools I Use
+    </a>
     <a
         href="{{ '/#tools' | url }}"
         class="navbar-link w3-bar-item w3-button">
@@ -56,7 +72,7 @@
         About Me
     </a>
 
-   
+  
 </nav>
     </header>
 
@@ -64,7 +80,7 @@
         {{ content | safe }}
     </main>
 
-    <footer class="w3-container w3-padding w3-theme-d1">
+    <footer class="w3-container w3-padding w3-theme">
         <div class="w3-content">
             <div class="w3-row-padding">
                 <div class="w3-col m4 l4">
